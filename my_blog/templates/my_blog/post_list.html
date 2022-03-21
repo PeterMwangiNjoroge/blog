@@ -10,10 +10,12 @@
     <header>
         <h1><a href="/">Peter's Blog</a></h1>
     </header>
+    {% for post in posts %}
     <article>
-        <time>Published: 14.06.2014, 12:14</time>
-        <h2><a href="">My first hardcoded post</a></h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore voluptas expedita alias. Aperiam iusto voluptas beatae totam adipisci itaque eius dolorem, quia facilis animi dolorum, aspernatur facere ut, perferendis ea?</p>
+        <time>Published: {{post.published_date}}</time>
+        <h2><a href="">{{post.title}}</a></h2>
+        <p>{{post.text|linebreaksbr}}</p>
     </article>
+    {% endfor %}
 </body>
 </html>
