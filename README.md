@@ -5,7 +5,7 @@ To run the code on your local system, ensure you have python and git installed t
 > * `cd blog`
 > * `python -m venv venv_blog`
 > * `venv_blog\Scripts\activate` in Windows or `source venv_blog/bin/activate` in unix
-> * `pip install django' to install django
+> * `pip install django` to install django
 > * `pip install django-crispy-forms` to install django crispy forms
 > * `python manage.py makemigrations my_blog` to make migrations
 > * `python manage.py migrate` to make apply migrations
